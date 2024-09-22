@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- run locally with `python -m http.server 8000` -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/x-icon" href="/assets/icon.svg">
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quattrocento:wght@400;700&display=swap"
+    rel="stylesheet">
+  <title>Boston To-Do</title>
+</head>
+
+<body>
+  <main>
+    <div class="content">
+      <section id="about-section">
+        <div class="row info">
+          <img class="logo" alt="Boston City Seal" src="assets/logo.png" />
+        </div>
+        <div class="row info">
+          <h1>Exploring Boston</h1>
+        </div>
+        <div class="row info">
+          <div id="description-container">
+            <p>
+              A running list of local experiences/restaurants I'd like to try.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="stats-section">
+        <div class="row">
+          <h1>Stats</h1>
+        </div>
+        <div class="row">
+          <div class="stats-container">
+            <div class="stats-card">
+              <h2>Total Number of Restaurants</h2>
+              <h3 id="num-restaurants"></h3>
+            </div>
+            <div class="stats-card">
+              <h2>Number of Restaurants Visited So Far</h2>
+              <h3 id="total-visited"></h3>
+            </div>
+            <div class="stats-card">
+              <h2>Most Visited Restaurant</h2>
+              <h3 id="most-visited"></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- filters/search -->
+      <section id="filter-section">
+        <h1>Restaurants</h1>
+        <div class="search">
+          <label for="search">Search Restaurant Names:</label>
+          <input id="search" type="text" placeholder="Type Name Here" name="search" />
+        </div>
+        <form id="filters-form">
+          <fieldset>
+            <legend>Show Restaurants</legend>
+            <div class="filter-col">
+              <label>
+                <input type="radio" name="show" value="all" checked /> Show All Restaurants
+              </label>
+              <label>
+                <input type="radio" name="show" value="unvisited" /> Show Only Unvisited
+              </label>
+            </div>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Categories</legend>
+            <div class="filter-col">
+              <div class="col">
+                <label>
+                  <input type="checkbox" name="categories" value="Asian" /> Asian
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Japanese" /> Japanese
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Ramen" /> Ramen
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Sushi" /> Sushi
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="checkbox" name="categories" value="Italian" /> Italian
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Pizza" /> Pizza
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Slice" /> Slice
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="checkbox" name="categories" value="American" /> American
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Greek" /> Greek
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Indian" /> Indian
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Irish" /> Irish
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Jewish" /> Jewish
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Mediterranean" /> Mediterranean
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Mexican" /> Mexican
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Tapas" /> Tapas
+                </label>
+              </div>
+              <div class="col">
+                <label>
+                  <input type="checkbox" name="categories" value="Breakfast" /> Breakfast
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Drinks" /> Drinks
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Alex" /> Alex
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Dessert" /> Dessert
+                </label>
+                <label>
+                  <input type="checkbox" name="categories" value="Late Night" /> Late Night
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Price Range</legend>
+            <div class="filter-col">
+              <label>
+                <input type="checkbox" name="price" value="1" /> &lt;$10
+              </label>
+              <label>
+                <input type="checkbox" name="price" value="2" /> $10-$20
+              </label>
+              <label>
+                <input type="checkbox" name="price" value="3" /> $20-$30
+              </label>
+              <label>
+                <input type="checkbox" name="price" value="4" /> &gt; $40
+              </label>
+            </div>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Transport</legend>
+            <div class="filter-col">
+              <label id="minutes-label">
+                <input type="range" name="minutes" min="0" max="50" value="50"
+                  oninput="updateSliderMinutes(this.value);" /><span><span id="selectedMinutes"></span> Minutes</span>
+              </label>
+              <label>
+                <input type="checkbox" name="transport" value="walk" /> Walk
+              </label>
+              <label>
+                <input type="checkbox" name="transport" value="train" /> Train
+              </label>
+              <label>
+                <input type="checkbox" name="transport" value="bus" /> Bus
+              </label>
+            </div>
+          </fieldset>
+          <br />
+          <fieldset id="location">
+            <legend>Location</legend>
+            <div class="filter-col">
+              <div class="col">
+                <h2 class="category-title">Central</h2>
+                <label>
+                  <input type="checkbox" name="location" value="Back Bay" /> Back Bay
+                </label>
+                <label>
+                  <input type="checkbox" name="location" value="Beacon Hill" /> Beacon Hill
+                </label>
+                <label>
+                  <input type="checkbox" name="location" value="Boston Proper" /> Boston Proper
+                </label>
+                <label>
+                  <input type="checkbox" name="location" value="North End" /> North End
+                </label>
+              </div>
+              <div class="col">
+                <h2 class="category-title">Cambridge</h2>
+                <label>
+                  <input type="checkbox" name="location" value="Cambridge (Central Square)" />Central
+                  Square
+                </label>
+                <label>
+                  <input type="checkbox" name="location" value="Cambridge (Harvard Square)" />Harvard
+                  Square
+                </label>
+                <label>
+                  <input type="checkbox" name="location" value="Cambridge (Inman Square)" />Inman Square
+                </label>
+                <label>
+                  <input type="checkbox" name="location" value="Cambridge (Kendall Square)" />Kendall
+                  Square
+                </label>
+                <label>
+                  <input type="checkbox" name="location" value="Cambridge (Porter Square)" />Porter Square
+                </label>
+              </div>
+              <div class="col">
+                <h2 class="category-title">East</h2>
+                <label>
+                  <input type="checkbox" name="location" value="Chinatown" /> Chinatown
+                </label>
+                <label>
+                  <input type="checkbox" name="location" value="East Boston" /> East Boston
+                </label>
+              </div>
+              <div class="col">
+                <h2 class="category-title">West</h2>
+                <label>
+                  <input type="checkbox" name="location" value="Way Out There" /> Way Out There
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <br />
+          <div class="row">
+            <input type="submit" value="Filter Restaurants" />
+          </div>
+        </form>
+      </section>
+
+      <!-- list of restaurants-->
+      <section id="restaurants-section">
+        <div id="restaurants-container"></div>
+      </section>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
