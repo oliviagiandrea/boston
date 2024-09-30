@@ -1,126 +1,5 @@
 const restaurant_json = [
   {
-    "title": "Ruka",
-    "price": 3,
-    "categories": ["Asian"],
-    "location": "Boston Proper",
-    "distance": 24,
-    "transport": "walk",
-    "url": "http://www.rukarestobar.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Bar Mezzana",
-    "price": 2,
-    "categories": ["Italian"],
-    "location": "Boston Proper",
-    "distance": 29,
-    "transport": "train",
-    "url": "https://www.barmezzana.com/menus/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Hojoko",
-    "price": 2,
-    "categories": ["Japanese"],
-    "location": "Boston Proper",
-    "distance": 46,
-    "transport": "train",
-    "url": "https://www.hojokoboston.com/menus/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Arya Trattoria",
-    "price": 3,
-    "categories": ["Italian"],
-    "location": "North End",
-    "distance": 6,
-    "transport": "walk",
-    "url": "https://aryatrattoria.com/menu/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Shojo",
-    "price": 2,
-    "categories": ["Asian", "Ramen"],
-    "location": "Chinatown",
-    "distance": 30,
-    "transport": "walk",
-    "url": "https://www.shojoboston.com/food-menu",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Toro",
-    "price": 3,
-    "categories": ["Tapas"],
-    "location": "Boston Proper",
-    "distance": 34,
-    "transport": "train",
-    "url": "https://www.toro-restaurant.com/menus",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Mamma Maria",
-    "price": 4,
-    "categories": ["Italian"],
-    "location": "North End",
-    "distance": 5,
-    "transport": "walk",
-    "url": "https://www.mammamaria.com/menu/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "La Famiglia Giorgio's",
-    "price": 3,
-    "categories": ["Italian"],
-    "location": "North End",
-    "distance": 6,
-    "transport": "walk",
-    "url": "https://www.lafamigliagiorgios.com/dinner.html#a",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "The Beehive",
-    "price": 2,
-    "categories": ["American", "Drinks", "Alex"],
-    "location": "Boston Proper",
-    "distance": 28,
-    "transport": "train",
-    "url": "https://www.beehiveboston.com/menu",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Panza",
-    "price": 2,
-    "categories": ["Italian"],
-    "location": "North End",
-    "distance": 4,
-    "transport": "walk",
-    "url": "https://panzarestaurant.com/menu",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Lucca Restaurant",
-    "price": 4,
-    "categories": ["Italian"],
-    "location": "North End",
-    "distance": 6,
-    "transport": "walk",
-    "url": "https://www.luccaboston.com/ld/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
     "title": "Ristorante Lucia",
     "price": 3,
     "categories": ["Italian"],
@@ -132,13 +11,24 @@ const restaurant_json = [
     "notes": ""
   },
   {
-    "title": "Umbria",
-    "price": 4,
+    "title": "Giacomo's Ristorante",
+    "price": 3,
     "categories": ["Italian"],
     "location": "North End",
-    "distance": 6,
+    "distance": 3,
     "transport": "walk",
-    "url": "https://umbrianorthend.com/menu/umbria-artisanal-pasta/",
+    "url": "https://www.giacomosboston.com/menu-todays-special",
+    "visited": 0,
+    "notes": "Try the butternut squash ravioli"
+  },
+  {
+    "title": "Mike's Pastry",
+    "price": 1,
+    "categories": ["Dessert"],
+    "location": "North End",
+    "distance": 4,
+    "transport": "walk",
+    "url": "https://www.mikespastry.com/",
     "visited": 0,
     "notes": ""
   },
@@ -154,244 +44,35 @@ const restaurant_json = [
     "notes": ""
   },
   {
-    "title": "Happy Lamb Hotpot",
-    "price": 2,
-    "categories": ["Asian"],
-    "location": "Cambridge (Central Square)",
-    "distance": 37,
-    "transport": "train",
-    "url": "https://happylambhotpot.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Yume Wo Katare",
-    "price": 2,
-    "categories": ["Japanese", "Ramen"],
-    "location": "Cambridge (Porter Square)",
-    "distance": 26,
-    "transport": "train",
-    "url": "https://www.yelp.com/biz/yume-wo-katare-cambridge-2",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Izakaya Ittoku",
-    "price": 2,
-    "categories": ["Japanese"],
-    "location": "Cambridge (Porter Square)",
-    "distance": 26,
-    "transport": "train",
-    "url": "https://www.ittoku.org/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Alden & Harlow",
-    "price": 2,
-    "categories": ["American", "Breakfast"],
-    "location": "Cambridge (Harvard Square)",
-    "distance": 41,
-    "transport": "train",
-    "url": "https://www.aldenharlow.com/",
-    "visited": 0,
-    "notes": "Try the focaccia and corn/shishito pancakes"
-  },
-  {
-    "title": "Mr. Bartley's Burger Cottage",
-    "price": 2,
-    "categories": ["American"],
-    "location": "Cambridge (Harvard Square)",
-    "distance": 43,
-    "transport": "train",
-    "url": "https://mrbartley.com/menu/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Area Four",
-    "price": 2,
-    "categories": ["Italian", "Pizza"],
-    "location": "Cambridge (Kendall Square)",
-    "distance": 34,
-    "transport": "bus",
-    "url": "https://www.areafour.com/kendall-square-menus/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Mamaleh's",
-    "price": 1,
-    "categories": ["Breakfast", "Jewish"],
-    "location": "Boston Proper",
-    "distance": 22,
-    "transport": "walk",
-    "url": "http://mamalehs.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Fuji",
-    "price": 2,
-    "categories": ["Japanese", "Sushi"],
-    "location": "Cambridge (Kendall Square)",
-    "distance": 27,
-    "transport": "bus",
-    "url": "https://www.fujiatkendall.com/menus/#lunch",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Punjabi Dhaba",
-    "price": 2,
-    "categories": ["Indian"],
-    "location": "Cambridge (Inman Square)",
-    "distance": 34,
-    "transport": "train",
-    "url": "https://punjabidhaba.co/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "The Druid",
-    "price": 2,
-    "categories": ["Irish", "Drinks", "Alex"],
-    "location": "Cambridge (Inman Square)",
-    "distance": 33,
-    "transport": "train",
-    "url": "http://www.druidpub.com/",
-    "visited": 0,
-    "notes": "Try the fish and chips"
-  },
-  {
-    "title": "India Pavilion",
-    "price": 2,
-    "categories": ["Indian"],
-    "location": "Cambridge (Central Square)",
-    "distance": 36,
-    "transport": "train",
-    "url": "https://indiapavilion.co/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Desi Dhaba",
-    "price": 2,
-    "categories": ["Indian"],
-    "location": "Cambridge (Central Square)",
-    "distance": 38,
-    "transport": "train",
-    "url": "https://www.cambridgedesidhaba.net/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Angela's Cafe",
-    "price": 2,
-    "categories": ["Breakfast", "Mexican"],
-    "location": "East Boston",
-    "distance": 31,
-    "transport": "train",
-    "url": "https://www.angelascafeboston.com/menu",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Rino's Place",
+    "title": "Panza",
     "price": 2,
     "categories": ["Italian"],
-    "location": "East Boston",
-    "distance": 30,
-    "transport": "train",
-    "url": "http://rinosplace.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Cactus Mexican Grill",
-    "price": 1,
-    "categories": ["Mexican"],
-    "location": "East Boston",
-    "distance": 20,
-    "transport": "train",
-    "url": "https://www.yelp.com/biz/cactus-mexican-grill-boston-2",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Santarpio's Pizza",
-    "price": 2,
-    "categories": ["Italian", "Pizza"],
-    "location": "East Boston",
-    "distance": 26,
-    "transport": "train",
-    "url": "http://www.santarpiospizza.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Taqueria Jalisco",
-    "price": 2,
-    "categories": ["Mexican"],
-    "location": "East Boston",
-    "distance": 31,
-    "transport": "train",
-    "url": "https://www.yelp.com/biz/taqueria-jalisco-boston-2",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "The Smoke Shop BBQ",
-    "price": 2,
-    "categories": ["American", "Alex"],
-    "location": "East Boston",
-    "distance": 23,
-    "transport": "train",
-    "url": "https://thesmokeshopbbq.com/food-menu/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Pinocchio's Pizza & Subs",
-    "price": 2,
-    "categories": ["Italian", "Pizza", "Slice", "Late Night"],
-    "location": "Cambridge (Harvard Square)",
-    "distance": 43,
-    "transport": "train",
-    "url": "http://www.pinocchiospizza.net/menu.html",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Mortadella Head",
-    "price": 2,
-    "categories": ["Italian", "Pizza"],
-    "location": "Way Out There",
-    "distance": 48,
-    "transport": "train",
-    "url": "https://mortadellahead.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Regina's Pizzeria",
-    "price": 2,
-    "categories": ["Italian", "Pizza"],
     "location": "North End",
-    "distance": 7,
+    "distance": 4,
     "transport": "walk",
-    "url": "https://www.pizzeriaregina.com/assets/files/reg_northend_takeout_menu_0424.pdf",
-    "visited": 1,
+    "url": "https://panzarestaurant.com/menu",
+    "visited": 0,
     "notes": ""
   },
   {
-    "title": "Si Cara",
+    "title": "Bova's Bakery",
     "price": 1,
-    "categories": ["Italian", "Pizza", "Slice"],
-    "location": "Cambridge (Central Square)",
-    "distance": 38,
-    "transport": "train",
-    "url": "https://sicarapizza.com/cambridge-central-square-si-cara-food-menu",
+    "categories": ["Dessert", "Late Night"],
+    "location": "North End",
+    "distance": 4,
+    "transport": "walk",
+    "url": "https://bovabakeryboston.net/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Mamma Maria",
+    "price": 4,
+    "categories": ["Italian"],
+    "location": "North End",
+    "distance": 5,
+    "transport": "walk",
+    "url": "https://www.mammamaria.com/menu/",
     "visited": 0,
     "notes": ""
   },
@@ -407,6 +88,28 @@ const restaurant_json = [
     "notes": "Try the pizza and arancini"
   },
   {
+    "title": "Tenoch Mexican",
+    "price": 2,
+    "categories": ["Mexican"],
+    "location": "North End",
+    "distance": 6,
+    "transport": "walk",
+    "url": "https://tenoch-boston.square.site/",
+    "visited": 0,
+    "notes": "Try the Choriqueso or any Torta"
+  },
+  {
+    "title": "Modern Pastry",
+    "price": 1,
+    "categories": ["Dessert"],
+    "location": "North End",
+    "distance": 6,
+    "transport": "walk",
+    "url": "https://modernpastry.com/",
+    "visited": 2,
+    "notes": "Cash only!"
+  },
+  {
     "title": "Quattro",
     "price": 2,
     "categories": ["Italian", "Pizza"],
@@ -418,6 +121,72 @@ const restaurant_json = [
     "notes": ""
   },
   {
+    "title": "Trattoria Il Panino",
+    "price": 3,
+    "categories": ["Italian", "Late Night"],
+    "location": "North End",
+    "distance": 6,
+    "transport": "walk",
+    "url": "https://trattoriailpanino.com/menu/",
+    "visited": 1,
+    "notes": "The tortelli is the best!"
+  },
+  {
+    "title": "Lucca Restaurant",
+    "price": 4,
+    "categories": ["Italian"],
+    "location": "North End",
+    "distance": 6,
+    "transport": "walk",
+    "url": "https://www.luccaboston.com/ld/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Umbria",
+    "price": 4,
+    "categories": ["Italian"],
+    "location": "North End",
+    "distance": 6,
+    "transport": "walk",
+    "url": "https://umbrianorthend.com/menu/umbria-artisanal-pasta/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Arya Trattoria",
+    "price": 3,
+    "categories": ["Italian"],
+    "location": "North End",
+    "distance": 6,
+    "transport": "walk",
+    "url": "https://aryatrattoria.com/menu/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "La Famiglia Giorgio's",
+    "price": 3,
+    "categories": ["Italian"],
+    "location": "North End",
+    "distance": 6,
+    "transport": "walk",
+    "url": "https://www.lafamigliagiorgios.com/dinner.html#a",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Regina's Pizzeria",
+    "price": 2,
+    "categories": ["Italian", "Pizza"],
+    "location": "North End",
+    "distance": 7,
+    "transport": "walk",
+    "url": "https://www.pizzeriaregina.com/assets/files/reg_northend_takeout_menu_0424.pdf",
+    "visited": 1,
+    "notes": ""
+  },
+  {
     "title": "Ernesto's Pizza",
     "price": 3,
     "categories": ["Italian", "Pizza"],
@@ -425,6 +194,160 @@ const restaurant_json = [
     "distance": 8,
     "transport": "walk",
     "url": "https://www.orderernestospizza.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Bon Me",
+    "price": 2,
+    "categories": ["Asian"],
+    "location": "Boston Proper",
+    "distance": 9,
+    "transport": "walk",
+    "url": "https://orders.bonmetruck.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Union Square Donuts",
+    "price": 1,
+    "categories": ["Dessert"],
+    "location": "North End",
+    "distance": 10,
+    "transport": "walk",
+    "url": "https://www.unionsquaredonuts.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Saus",
+    "price": 1,
+    "categories": ["American", "Late Night"],
+    "location": "Boston Proper",
+    "distance": 11,
+    "transport": "walk",
+    "url": "https://www.sausboston.com/boston-menu",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Falafel King",
+    "price": 2,
+    "categories": ["Mediterranean"],
+    "location": "Boston Proper",
+    "distance": 17,
+    "transport": "walk",
+    "url": "https://falafelkingboston.com/",
+    "visited": 0,
+    "notes": "Try the... falafel (duh)"
+  },
+  {
+    "title": "Kane's Donuts",
+    "price": 1,
+    "categories": ["Dessert"],
+    "location": "Boston Proper",
+    "distance": 20,
+    "transport": "walk",
+    "url": "https://www.kanesdonuts.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Blackbird Donuts",
+    "price": 1,
+    "categories": ["Dessert"],
+    "location": "Beacon Hill",
+    "distance": 20,
+    "transport": "walk",
+    "url": "https://www.blackbirddoughnuts.com/doughnuts",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Mooo...",
+    "price": 4,
+    "categories": ["American", "Breakfast"],
+    "location": "Beacon Hill",
+    "distance": 20,
+    "transport": "walk",
+    "url": "https://mooorestaurant.com/mooo-beaconhill/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Cactus Mexican Grill",
+    "price": 1,
+    "categories": ["Mexican"],
+    "location": "East Boston",
+    "distance": 20,
+    "transport": "train",
+    "url": "https://www.yelp.com/biz/cactus-mexican-grill-boston-2",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Tasty Burger",
+    "price": 1,
+    "categories": ["American", "Late Night"],
+    "location": "Back Bay",
+    "distance": 21,
+    "transport": "train",
+    "url": "http://www.tastyburger.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Mamaleh's",
+    "price": 1,
+    "categories": ["Breakfast", "Jewish"],
+    "location": "Boston Proper",
+    "distance": 22,
+    "transport": "walk",
+    "url": "http://mamalehs.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Avana Sushi",
+    "price": 1,
+    "categories": ["Japanese", "Sushi"],
+    "location": "Boston Proper",
+    "distance": 22,
+    "transport": "walk",
+    "url": "https://www.avanasushi.com/locations",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Flour Bakery & Cafe",
+    "price": 1,
+    "categories": ["Dessert"],
+    "location": "Beacon Hill",
+    "distance": 22,
+    "transport": "walk",
+    "url": "https://www.flourbakery.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Anna's Taqueria",
+    "price": 1,
+    "categories": ["Mexican"],
+    "location": "Beacon Hill",
+    "distance": 23,
+    "transport": "walk",
+    "url": "https://annastaqueria.com/locations/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "The Smoke Shop BBQ",
+    "price": 2,
+    "categories": ["American", "Alex"],
+    "location": "East Boston",
+    "distance": 23,
+    "transport": "train",
+    "url": "https://thesmokeshopbbq.com/food-menu/",
     "visited": 0,
     "notes": ""
   },
@@ -451,6 +374,226 @@ const restaurant_json = [
     "notes": ""
   },
   {
+    "title": "Ruka",
+    "price": 3,
+    "categories": ["Asian"],
+    "location": "Boston Proper",
+    "distance": 24,
+    "transport": "walk",
+    "url": "http://www.rukarestobar.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Dirty Water Dough",
+    "price": 2,
+    "categories": ["Italian", "Pizza"],
+    "location": "East Boston",
+    "distance": 25,
+    "transport": "train",
+    "url": "https://order.toasttab.com/online/dirty-water-dough-east-boston",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Contessa",
+    "price": 3,
+    "categories": ["Italian"],
+    "location": "Back Bay",
+    "distance": 25,
+    "transport": "train",
+    "url": "https://contessaristorante.com/boston/menus/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Grill 23",
+    "price": 4,
+    "categories": ["American"],
+    "location": "Back Bay",
+    "distance": 25,
+    "transport": "train",
+    "url": "https://www.grill23.com/menus",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Cafe Mami",
+    "price": 1,
+    "categories": ["Japanese"],
+    "location": "Cambridge (Porter Square)",
+    "distance": 25,
+    "transport": "train",
+    "url": "http://www.yelp.com/biz/caf%C3%A9-mami-cambridge-2",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Santarpio's Pizza",
+    "price": 2,
+    "categories": ["Italian", "Pizza"],
+    "location": "East Boston",
+    "distance": 26,
+    "transport": "train",
+    "url": "http://www.santarpiospizza.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Sorellina",
+    "price": 4,
+    "categories": ["Italian"],
+    "location": "Back Bay",
+    "distance": 26,
+    "transport": "train",
+    "url": "https://sorellinaboston.com/dinner/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Yume Wo Katare",
+    "price": 2,
+    "categories": ["Japanese", "Ramen"],
+    "location": "Cambridge (Porter Square)",
+    "distance": 26,
+    "transport": "train",
+    "url": "https://www.yelp.com/biz/yume-wo-katare-cambridge-2",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Izakaya Ittoku",
+    "price": 2,
+    "categories": ["Japanese"],
+    "location": "Cambridge (Porter Square)",
+    "distance": 26,
+    "transport": "train",
+    "url": "https://www.ittoku.org/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Fuji",
+    "price": 2,
+    "categories": ["Japanese", "Sushi"],
+    "location": "Chinatown",
+    "distance": 27,
+    "transport": "train",
+    "url": "https://www.fujiatinkblock.com/menus/#lunch",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "El Jefe's Taqueria",
+    "price": 2,
+    "categories": ["Mexican", "Late Night"],
+    "location": "Boston Proper",
+    "distance": 28,
+    "transport": "walk",
+    "url": "https://www.eljefestaqueria.com/copy-of-menu",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "The Beehive",
+    "price": 2,
+    "categories": ["American", "Drinks", "Alex"],
+    "location": "South End",
+    "distance": 28,
+    "transport": "train",
+    "url": "https://www.beehiveboston.com/menu",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Oakleaf Cakes",
+    "price": 1,
+    "categories": ["Dessert"],
+    "location": "Back Bay",
+    "distance": 29,
+    "transport": "train",
+    "url": "https://oakleafcakes.com/bakeshop",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Bar Mezzana",
+    "price": 2,
+    "categories": ["Italian"],
+    "location": "South End",
+    "distance": 29,
+    "transport": "train",
+    "url": "https://www.barmezzana.com/menus/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Penang Malaysian Cuisine",
+    "price": 2,
+    "categories": ["Asian"],
+    "location": "Chinatown",
+    "distance": 29,
+    "transport": "walk",
+    "url": "https://www.penangcuisineboston.com/",
+    "visited": 0,
+    "notes": "Try the Roti Canai"
+  },
+  {
+    "title": "Rino's Place",
+    "price": 2,
+    "categories": ["Italian"],
+    "location": "East Boston",
+    "distance": 30,
+    "transport": "train",
+    "url": "http://rinosplace.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Shojo",
+    "price": 2,
+    "categories": ["Asian", "Ramen"],
+    "location": "Chinatown",
+    "distance": 30,
+    "transport": "walk",
+    "url": "https://www.shojoboston.com/food-menu",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Angela's Cafe",
+    "price": 2,
+    "categories": ["Breakfast", "Mexican"],
+    "location": "East Boston",
+    "distance": 31,
+    "transport": "train",
+    "url": "https://www.angelascafeboston.com/menu",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Taqueria Jalisco",
+    "price": 2,
+    "categories": ["Mexican"],
+    "location": "East Boston",
+    "distance": 31,
+    "transport": "train",
+    "url": "https://www.yelp.com/biz/taqueria-jalisco-boston-2",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "South Street Diner",
+    "price": 2,
+    "categories": ["Breakfast", "American", "Late Night"],
+    "location": "Chinatown",
+    "distance": 31,
+    "transport": "walk",
+    "url": "https://southstreetdiner.com/menu.php",
+    "visited": 0,
+    "notes": ""
+  },
+  {
     "title": "HOTBOX Pizza & Roast Beef",
     "price": 2,
     "categories": ["American", "Italian", "Pizza"],
@@ -458,6 +601,160 @@ const restaurant_json = [
     "distance": 32,
     "transport": "train",
     "url": "https://www.eathotbox.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Krasi",
+    "price": 3,
+    "categories": ["Greek", "Breakfast"],
+    "location": "Back Bay",
+    "distance": 33,
+    "transport": "train",
+    "url": "https://krasiboston.com/the-dinner-menu/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "The Druid",
+    "price": 2,
+    "categories": ["Irish", "Drinks", "Alex"],
+    "location": "Cambridge (Inman Square)",
+    "distance": 33,
+    "transport": "train",
+    "url": "http://www.druidpub.com/",
+    "visited": 0,
+    "notes": "Try the fish and chips"
+  },
+  {
+    "title": "Toro",
+    "price": 3,
+    "categories": ["Tapas"],
+    "location": "South End",
+    "distance": 34,
+    "transport": "train",
+    "url": "https://www.toro-restaurant.com/menus",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Punjabi Dhaba",
+    "price": 2,
+    "categories": ["Indian"],
+    "location": "Cambridge (Inman Square)",
+    "distance": 34,
+    "transport": "train",
+    "url": "https://punjabidhaba.co/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Area Four",
+    "price": 2,
+    "categories": ["Italian", "Pizza"],
+    "location": "Cambridge (Kendall Square)",
+    "distance": 34,
+    "transport": "bus",
+    "url": "https://www.areafour.com/kendall-square-menus/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "India Pavilion",
+    "price": 2,
+    "categories": ["Indian"],
+    "location": "Cambridge (Central Square)",
+    "distance": 36,
+    "transport": "train",
+    "url": "https://indiapavilion.co/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Happy Lamb Hotpot",
+    "price": 2,
+    "categories": ["Asian"],
+    "location": "Cambridge (Central Square)",
+    "distance": 37,
+    "transport": "train",
+    "url": "https://happylambhotpot.com/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Desi Dhaba",
+    "price": 2,
+    "categories": ["Indian"],
+    "location": "Cambridge (Central Square)",
+    "distance": 38,
+    "transport": "train",
+    "url": "https://www.cambridgedesidhaba.net/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Si Cara",
+    "price": 1,
+    "categories": ["Italian", "Pizza", "Slice"],
+    "location": "Cambridge (Central Square)",
+    "distance": 38,
+    "transport": "train",
+    "url": "https://sicarapizza.com/cambridge-central-square-si-cara-food-menu",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Alden & Harlow",
+    "price": 2,
+    "categories": ["American", "Breakfast"],
+    "location": "Cambridge (Harvard Square)",
+    "distance": 41,
+    "transport": "train",
+    "url": "https://www.aldenharlow.com/",
+    "visited": 0,
+    "notes": "Try the focaccia and corn/shishito pancakes"
+  },
+  {
+    "title": "Mr. Bartley's Burger Cottage",
+    "price": 2,
+    "categories": ["American"],
+    "location": "Cambridge (Harvard Square)",
+    "distance": 43,
+    "transport": "train",
+    "url": "https://mrbartley.com/menu/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Pinocchio's Pizza & Subs",
+    "price": 2,
+    "categories": ["Italian", "Pizza", "Slice", "Late Night"],
+    "location": "Cambridge (Harvard Square)",
+    "distance": 43,
+    "transport": "train",
+    "url": "http://www.pinocchiospizza.net/menu.html",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Hojoko",
+    "price": 2,
+    "categories": ["Japanese"],
+    "location": "Back Bay",
+    "distance": 46,
+    "transport": "train",
+    "url": "https://www.hojokoboston.com/menus/",
+    "visited": 0,
+    "notes": ""
+  },
+  {
+    "title": "Mortadella Head",
+    "price": 2,
+    "categories": ["Italian", "Pizza"],
+    "location": "Way Out There",
+    "distance": 48,
+    "transport": "train",
+    "url": "https://mortadellahead.com/",
     "visited": 0,
     "notes": ""
   },
@@ -482,314 +779,6 @@ const restaurant_json = [
     "url": "https://www.volopizzeria.com/",
     "visited": 0,
     "notes": ""
-  },
-  {
-    "title": "Dirty Water Dough",
-    "price": 2,
-    "categories": ["Italian", "Pizza"],
-    "location": "East Boston",
-    "distance": 25,
-    "transport": "train",
-    "url": "https://order.toasttab.com/online/dirty-water-dough-east-boston",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Krasi",
-    "price": 3,
-    "categories": ["Greek", "Breakfast"],
-    "location": "Back Bay",
-    "distance": 33,
-    "transport": "train",
-    "url": "https://krasiboston.com/the-dinner-menu/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Contessa",
-    "price": 3,
-    "categories": ["Italian"],
-    "location": "Back Bay",
-    "distance": 25,
-    "transport": "train",
-    "url": "https://contessaristorante.com/boston/menus/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Mooo...",
-    "price": 4,
-    "categories": ["American", "Breakfast"],
-    "location": "Beacon Hill",
-    "distance": 20,
-    "transport": "walk",
-    "url": "https://mooorestaurant.com/mooo-beaconhill/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Sorellina",
-    "price": 4,
-    "categories": ["Italian"],
-    "location": "Back Bay",
-    "distance": 26,
-    "transport": "train",
-    "url": "https://sorellinaboston.com/dinner/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Grill 23",
-    "price": 4,
-    "categories": ["American"],
-    "location": "Back Bay",
-    "distance": 25,
-    "transport": "train",
-    "url": "https://www.grill23.com/menus",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Falafel King",
-    "price": 2,
-    "categories": ["Mediterranean"],
-    "location": "Boston Proper",
-    "distance": 17,
-    "transport": "walk",
-    "url": "https://falafelkingboston.com/",
-    "visited": 0,
-    "notes": "Try the... falafel (duh)"
-  },
-  {
-    "title": "Tasty Burger",
-    "price": 1,
-    "categories": ["American", "Late Night"],
-    "location": "Back Bay",
-    "distance": 21,
-    "transport": "train",
-    "url": "http://www.tastyburger.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Anna's Taqueria",
-    "price": 1,
-    "categories": ["Mexican"],
-    "location": "Beacon Hill",
-    "distance": 23,
-    "transport": "walk",
-    "url": "https://annastaqueria.com/locations/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Bon Me",
-    "price": 2,
-    "categories": ["Asian"],
-    "location": "Boston Proper",
-    "distance": 9,
-    "transport": "walk",
-    "url": "https://orders.bonmetruck.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Cafe Mami",
-    "price": 1,
-    "categories": ["Japanese"],
-    "location": "Cambridge (Porter Square)",
-    "distance": 25,
-    "transport": "train",
-    "url": "http://www.yelp.com/biz/caf%C3%A9-mami-cambridge-2",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Saus",
-    "price": 1,
-    "categories": ["American", "Late Night"],
-    "location": "Boston Proper",
-    "distance": 11,
-    "transport": "walk",
-    "url": "https://www.sausboston.com/boston-menu",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Avana Sushi",
-    "price": 1,
-    "categories": ["Japanese", "Sushi"],
-    "location": "Boston Proper",
-    "distance": 22,
-    "transport": "walk",
-    "url": "https://www.avanasushi.com/locations",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Chicken & Rice Guys",
-    "price": 2,
-    "categories": ["American", "Mediterranean"],
-    "location": "Boston Proper",
-    "distance": 18,
-    "transport": "walk",
-    "url": "https://cnrguys.com/menu-and-locations/#our-menu/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Bova's Bakery",
-    "price": 1,
-    "categories": ["Dessert", "Late Night"],
-    "location": "North End",
-    "distance": 4,
-    "transport": "walk",
-    "url": "https://bovabakeryboston.net/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "South Street Diner",
-    "price": 2,
-    "categories": ["Breakfast", "American", "Late Night"],
-    "location": "Chinatown",
-    "distance": 31,
-    "transport": "walk",
-    "url": "https://southstreetdiner.com/menu.php",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Trattoria Il Panino",
-    "price": 3,
-    "categories": ["Italian", "Late Night"],
-    "location": "North End",
-    "distance": 6,
-    "transport": "walk",
-    "url": "https://trattoriailpanino.com/menu/",
-    "visited": 1,
-    "notes": "The tortelli is the best!"
-  },
-  {
-    "title": "El Jefe's Taqueria",
-    "price": 2,
-    "categories": ["Mexican", "Late Night"],
-    "location": "Boston Proper",
-    "distance": 28,
-    "transport": "walk",
-    "url": "https://www.eljefestaqueria.com/copy-of-menu",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Union Square Donuts",
-    "price": 1,
-    "categories": ["Dessert"],
-    "location": "North End",
-    "distance": 10,
-    "transport": "walk",
-    "url": "https://www.unionsquaredonuts.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Blackbird Donuts",
-    "price": 1,
-    "categories": ["Dessert"],
-    "location": "Beacon Hill",
-    "distance": 20,
-    "transport": "walk",
-    "url": "https://www.blackbirddoughnuts.com/doughnuts",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Kane's Donuts",
-    "price": 1,
-    "categories": ["Dessert"],
-    "location": "Boston Proper",
-    "distance": 20,
-    "transport": "walk",
-    "url": "https://www.kanesdonuts.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Penang Malaysian Cuisine",
-    "price": 2,
-    "categories": ["Asian"],
-    "location": "Chinatown",
-    "distance": 29,
-    "transport": "walk",
-    "url": "https://www.penangcuisineboston.com/",
-    "visited": 0,
-    "notes": "Try the Roti Canai"
-  },
-  {
-    "title": "Giacomo's Ristorante",
-    "price": 3,
-    "categories": ["Italian"],
-    "location": "North End",
-    "distance": 3,
-    "transport": "walk",
-    "url": "https://www.giacomosboston.com/menu-todays-special",
-    "visited": 0,
-    "notes": "Try the butternut squash ravioli"
-  },
-  {
-    "title": "Tenoch Mexican",
-    "price": 2,
-    "categories": ["Mexican"],
-    "location": "North End",
-    "distance": 6,
-    "transport": "walk",
-    "url": "https://tenoch-boston.square.site/",
-    "visited": 0,
-    "notes": "Try the Choriqueso or any Torta"
-  },
-  {
-    "title": "Modern Pastry",
-    "price": 1,
-    "categories": ["Dessert"],
-    "location": "North End",
-    "distance": 6,
-    "transport": "walk",
-    "url": "https://modernpastry.com/",
-    "visited": 2,
-    "notes": "Cash only!"
-  },
-  {
-    "title": "Mike's Pastry",
-    "price": 1,
-    "categories": ["Dessert"],
-    "location": "North End",
-    "distance": 4,
-    "transport": "walk",
-    "url": "https://www.mikespastry.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Oakleaf Cakes",
-    "price": 1,
-    "categories": ["Dessert"],
-    "location": "Back Bay",
-    "distance": 29,
-    "transport": "train",
-    "url": "https://oakleafcakes.com/bakeshop",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Flour Bakery & Cafe",
-    "price": 1,
-    "categories": ["Dessert"],
-    "location": "Beacon Hill",
-    "distance": 22,
-    "transport": "walk",
-    "url": "https://www.flourbakery.com/",
-    "visited": 0,
-    "notes": ""
   }
 ];
 
@@ -810,11 +799,8 @@ function addRestaurantsToPage(restaurants) {
   restaurants.forEach(restaurant => {
     let card = document.createElement('div');
     card.classList.add('restaurant-card')
-    if (restaurant.visited >= 1) {
-      card.classList.add('visited');
-    }
 
-    card.innerHTML = `<a class='restaurant-link' href='${restaurant.url}'>
+    card.innerHTML = `<a class='restaurant-link' href='${restaurant.url}' target="_blank" >
                         <b>${restaurant.title}</b>
                         <div>
                           <p class="restaurant-price">${'$'.repeat(Number(restaurant.price))}</p>
@@ -824,6 +810,12 @@ function addRestaurantsToPage(restaurants) {
                           <p>${restaurant.notes}</p>
                         </div>
                       </a>`;
+
+    if (restaurant.visited >= 1) {
+      // card.classList.add('visited');
+      card.innerHTML += "<img src='assets/stamp.svg' class='visited-stamp' />";
+    }
+
     restaurantsContainer.appendChild(card);
   });
 }
