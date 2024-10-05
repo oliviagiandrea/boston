@@ -1,8 +1,8 @@
 :root {
-  --red: #9A2408;
+  --red: #9a2408;
   --dark-red: #7d1f07;
   --gray: #d7d7d7;
-  --white: #f8f8f1
+  --white: #f8f8f1;
 }
 
 body {
@@ -11,7 +11,6 @@ body {
   margin: 3rem 0 0 0;
   padding: 0;
   font-family: "Quattrocento", serif;
-  font-size: 1.2rem;
 }
 
 h1 {
@@ -40,7 +39,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0 0 0;
+  padding: 2rem 0 0 0;
   width: 100%;
 }
 
@@ -58,7 +57,7 @@ section {
 
 @media (max-width: 480px) {
   .col {
-    gap: 0.75rem
+    gap: 0.75rem;
   }
 }
 
@@ -66,6 +65,12 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 480px) {
+  .introduction {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 480px) {
@@ -95,6 +100,7 @@ section {
   align-items: stretch;
   width: 80%;
   margin-top: 0.5em;
+  max-height: 30vh;
 }
 
 @media (max-width: 800px) {
@@ -138,11 +144,9 @@ button:hover,
 }
 
 #most-visited {
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
   line-height: 1.3em;
 }
-
-
 
 /* -------------------------------------------------- */
 /*                    Filtering Form                  */
@@ -174,7 +178,6 @@ input[type="text"] {
   margin-right: 0.25rem;
   width: 60%;
   font-family: "Quattrocento", serif;
-  font-size: 1.2rem;
 }
 
 #filters-form {
@@ -189,7 +192,7 @@ fieldset {
 }
 
 legend {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -246,14 +249,14 @@ input[type="range"] {
 }
 
 .category-title {
-  margin: 0;
+  margin: 0 0 0.5em 0;
   font-weight: bold;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
 }
 
 input[type="submit"] {
   font-family: "Quattrocento", serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: var(--white);
   background-color: var(--red);
@@ -274,8 +277,6 @@ input[type="submit"]:hover {
   }
 }
 
-
-
 /* -------------------------------------------------- */
 /*                   Restaurants List                 */
 /* -------------------------------------------------- */
@@ -284,8 +285,9 @@ input[type="submit"]:hover {
   background-color: var(--gray);
   display: flex;
   flex-wrap: wrap;
+  gap: 1em;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 3rem;
   width: 100%;
 }
 
@@ -295,9 +297,8 @@ input[type="submit"]:hover {
 
 .restaurant-card {
   background-color: var(--white);
-  padding: 2%;
-  margin: 1%;
-  width: 300px;
+  padding: 1%;
+  width: 250px;
   text-align: center;
   border-radius: 7px;
   position: relative;
