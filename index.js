@@ -18,7 +18,7 @@ const restaurant_json = [
     "distance": 3,
     "transport": "walk",
     "url": "https://www.giacomosboston.com/menu-todays-special",
-    "visited": 0,
+    "visited": 1,
     "notes": "Try the butternut squash ravioli"
   },
   {
@@ -118,7 +118,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://quattro-boston.com/menu/brick-oven-pizza/",
     "visited": 0,
-    "notes": ""
+    "notes": "Try the potato pizza"
   },
   {
     "title": "Trattoria Il Panino",
@@ -178,7 +178,7 @@ const restaurant_json = [
   {
     "title": "Regina's Pizzeria",
     "price": 2,
-    "categories": ["Italian", "Pizza"],
+    "categories": ["Italian", "Pizza", "Slice"],
     "location": "North End",
     "distance": 7,
     "transport": "walk",
@@ -189,12 +189,12 @@ const restaurant_json = [
   {
     "title": "Ernesto's Pizza",
     "price": 3,
-    "categories": ["Italian", "Pizza"],
+    "categories": ["Italian", "Pizza", "Slice"],
     "location": "North End",
     "distance": 8,
     "transport": "walk",
     "url": "https://www.orderernestospizza.com/",
-    "visited": 0,
+    "visited": 1,
     "notes": ""
   },
   {
@@ -205,8 +205,8 @@ const restaurant_json = [
     "distance": 9,
     "transport": "walk",
     "url": "https://orders.bonmetruck.com/",
-    "visited": 0,
-    "notes": ""
+    "visited": 1,
+    "notes": "Good banh mi!"
   },
   {
     "title": "Union Square Donuts",
@@ -370,17 +370,6 @@ const restaurant_json = [
     "distance": 24,
     "transport": "bus",
     "url": "https://www.yelp.com/biz/ciao-pizza-and-pasta-chelsea-2?osq=Thick+Crust+Pizza",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Ruka",
-    "price": 3,
-    "categories": ["Asian"],
-    "location": "Boston Proper",
-    "distance": 24,
-    "transport": "walk",
-    "url": "http://www.rukarestobar.com/",
     "visited": 0,
     "notes": ""
   },
@@ -590,17 +579,6 @@ const restaurant_json = [
     "distance": 31,
     "transport": "walk",
     "url": "https://southstreetdiner.com/menu.php",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "HOTBOX Pizza & Roast Beef",
-    "price": 2,
-    "categories": ["American", "Italian", "Pizza"],
-    "location": "Way Out There",
-    "distance": 32,
-    "transport": "train",
-    "url": "https://www.eathotbox.com/",
     "visited": 0,
     "notes": ""
   },
