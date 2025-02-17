@@ -1,16 +1,5 @@
 const restaurant_json = [
   {
-    "title": "Ristorante Lucia",
-    "price": 3,
-    "categories": ["Italian"],
-    "location": "North End",
-    "distance": 2,
-    "transport": "walk",
-    "url": "http://luciaboston.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
     "title": "Giacomo's Ristorante",
     "price": 3,
     "categories": ["Italian"],
@@ -19,6 +8,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.giacomosboston.com/menu-todays-special",
     "visited": 1,
+    "cash_only": 0,
     "notes": "Try the butternut squash ravioli"
   },
   {
@@ -30,6 +20,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.mikespastry.com/",
     "visited": 0,
+    "cash_only": 1,
     "notes": ""
   },
   {
@@ -41,6 +32,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.carmelinasboston.com/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -52,28 +44,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://panzarestaurant.com/menu",
     "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Bova's Bakery",
-    "price": 1,
-    "categories": ["Dessert", "Late Night"],
-    "location": "North End",
-    "distance": 4,
-    "transport": "walk",
-    "url": "https://bovabakeryboston.net/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Mamma Maria",
-    "price": 4,
-    "categories": ["Italian"],
-    "location": "North End",
-    "distance": 5,
-    "transport": "walk",
-    "url": "https://www.mammamaria.com/menu/",
-    "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -85,6 +56,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.yelp.com/biz/galleria-umberto-boston",
     "visited": 0,
+    "cash_only": 1,
     "notes": "Try the pizza and arancini"
   },
   {
@@ -96,6 +68,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://tenoch-boston.square.site/",
     "visited": 0,
+    "cash_only": 0,
     "notes": "Try the Choriqueso or any Torta"
   },
   {
@@ -107,7 +80,8 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://modernpastry.com/",
     "visited": 2,
-    "notes": "Cash only!"
+    "cash_only": 1,
+    "notes": ""
   },
   {
     "title": "Quattro",
@@ -118,6 +92,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://quattro-boston.com/menu/brick-oven-pizza/",
     "visited": 0,
+    "cash_only": 0,
     "notes": "Try the potato pizza"
   },
   {
@@ -129,7 +104,8 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://trattoriailpanino.com/menu/",
     "visited": 1,
-    "notes": "The tortelli is the best!"
+    "cash_only": 0,
+    "notes": "The tortelli is the best"
   },
   {
     "title": "Lucca Restaurant",
@@ -140,18 +116,8 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.luccaboston.com/ld/",
     "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Umbria",
-    "price": 4,
-    "categories": ["Italian"],
-    "location": "North End",
-    "distance": 6,
-    "transport": "walk",
-    "url": "https://umbrianorthend.com/menu/umbria-artisanal-pasta/",
-    "visited": 0,
-    "notes": ""
+    "cash_only": 0,
+    "notes": "Try the meatballs"
   },
   {
     "title": "Arya Trattoria",
@@ -162,6 +128,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://aryatrattoria.com/menu/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -173,6 +140,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.lafamigliagiorgios.com/dinner.html#a",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -184,6 +152,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.pizzeriaregina.com/assets/files/reg_northend_takeout_menu_0424.pdf",
     "visited": 1,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -195,6 +164,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.orderernestospizza.com/",
     "visited": 1,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -206,18 +176,8 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://orders.bonmetruck.com/",
     "visited": 1,
-    "notes": "Good banh mi!"
-  },
-  {
-    "title": "Union Square Donuts",
-    "price": 1,
-    "categories": ["Dessert"],
-    "location": "North End",
-    "distance": 10,
-    "transport": "walk",
-    "url": "https://www.unionsquaredonuts.com/",
-    "visited": 0,
-    "notes": ""
+    "cash_only": 0,
+    "notes": "Good banh mi"
   },
   {
     "title": "Saus",
@@ -228,6 +188,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.sausboston.com/boston-menu",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -239,6 +200,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://falafelkingboston.com/",
     "visited": 0,
+    "cash_only": 0,
     "notes": "Try the... falafel (duh)"
   },
   {
@@ -250,6 +212,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.kanesdonuts.com/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -261,17 +224,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.blackbirddoughnuts.com/doughnuts",
     "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Mooo...",
-    "price": 4,
-    "categories": ["American", "Breakfast"],
-    "location": "Beacon Hill",
-    "distance": 20,
-    "transport": "walk",
-    "url": "https://mooorestaurant.com/mooo-beaconhill/",
-    "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -283,6 +236,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://www.yelp.com/biz/cactus-mexican-grill-boston-2",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -294,6 +248,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "http://www.tastyburger.com/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -305,6 +260,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "http://mamalehs.com/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -316,7 +272,8 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.avanasushi.com/locations",
     "visited": 0,
-    "notes": ""
+    "cash_only": 0,
+    "notes": "Try the M-F two rolls/soup lunch special"
   },
   {
     "title": "Flour Bakery & Cafe",
@@ -327,6 +284,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.flourbakery.com/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -338,6 +296,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://annastaqueria.com/locations/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -349,6 +308,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://thesmokeshopbbq.com/food-menu/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -360,6 +320,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.tenderonis.com/hsp-menu",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -371,39 +332,7 @@ const restaurant_json = [
     "transport": "bus",
     "url": "https://www.yelp.com/biz/ciao-pizza-and-pasta-chelsea-2?osq=Thick+Crust+Pizza",
     "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Dirty Water Dough",
-    "price": 2,
-    "categories": ["Italian", "Pizza"],
-    "location": "East Boston",
-    "distance": 25,
-    "transport": "train",
-    "url": "https://order.toasttab.com/online/dirty-water-dough-east-boston",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Contessa",
-    "price": 3,
-    "categories": ["Italian"],
-    "location": "Back Bay",
-    "distance": 25,
-    "transport": "train",
-    "url": "https://contessaristorante.com/boston/menus/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Grill 23",
-    "price": 4,
-    "categories": ["American"],
-    "location": "Back Bay",
-    "distance": 25,
-    "transport": "train",
-    "url": "https://www.grill23.com/menus",
-    "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -415,28 +344,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "http://www.yelp.com/biz/caf%C3%A9-mami-cambridge-2",
     "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Santarpio's Pizza",
-    "price": 2,
-    "categories": ["Italian", "Pizza"],
-    "location": "East Boston",
-    "distance": 26,
-    "transport": "train",
-    "url": "http://www.santarpiospizza.com/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Sorellina",
-    "price": 4,
-    "categories": ["Italian"],
-    "location": "Back Bay",
-    "distance": 26,
-    "transport": "train",
-    "url": "https://sorellinaboston.com/dinner/",
-    "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -448,6 +356,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://www.yelp.com/biz/yume-wo-katare-cambridge-2",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -459,6 +368,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://www.ittoku.org/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -470,6 +380,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://www.fujiatinkblock.com/menus/#lunch",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -481,6 +392,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.eljefestaqueria.com/copy-of-menu",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -492,6 +404,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://www.beehiveboston.com/menu",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -503,29 +416,8 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://oakleafcakes.com/bakeshop",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
-  },
-  {
-    "title": "Bar Mezzana",
-    "price": 2,
-    "categories": ["Italian"],
-    "location": "South End",
-    "distance": 29,
-    "transport": "train",
-    "url": "https://www.barmezzana.com/menus/",
-    "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Penang Malaysian Cuisine",
-    "price": 2,
-    "categories": ["Asian"],
-    "location": "Chinatown",
-    "distance": 29,
-    "transport": "walk",
-    "url": "https://www.penangcuisineboston.com/",
-    "visited": 0,
-    "notes": "Try the Roti Canai"
   },
   {
     "title": "Rino's Place",
@@ -536,6 +428,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "http://rinosplace.com/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -547,6 +440,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://www.shojoboston.com/food-menu",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -558,6 +452,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://www.angelascafeboston.com/menu",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -569,6 +464,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://www.yelp.com/biz/taqueria-jalisco-boston-2",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -580,17 +476,7 @@ const restaurant_json = [
     "transport": "walk",
     "url": "https://southstreetdiner.com/menu.php",
     "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Krasi",
-    "price": 3,
-    "categories": ["Greek", "Breakfast"],
-    "location": "Back Bay",
-    "distance": 33,
-    "transport": "train",
-    "url": "https://krasiboston.com/the-dinner-menu/",
-    "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -602,7 +488,20 @@ const restaurant_json = [
     "transport": "train",
     "url": "http://www.druidpub.com/",
     "visited": 0,
+    "cash_only": 0,
     "notes": "Try the fish and chips"
+  },
+  {
+    "title": "McKenna's Cafe",
+    "price": 1,
+    "categories": ["Breakfast"],
+    "location": "South End",
+    "distance": 34,
+    "transport": "train",
+    "url": "https://www.mckennascafe.com/our-menu",
+    "visited": 0,
+    "cash_only": 0,
+    "notes": "Try the blueberry pancakes"
   },
   {
     "title": "Toro",
@@ -613,6 +512,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://www.toro-restaurant.com/menus",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -624,17 +524,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://punjabidhaba.co/",
     "visited": 0,
-    "notes": ""
-  },
-  {
-    "title": "Area Four",
-    "price": 2,
-    "categories": ["Italian", "Pizza"],
-    "location": "Cambridge (Kendall Square)",
-    "distance": 34,
-    "transport": "bus",
-    "url": "https://www.areafour.com/kendall-square-menus/",
-    "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -646,6 +536,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://indiapavilion.co/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -656,7 +547,8 @@ const restaurant_json = [
     "distance": 37,
     "transport": "train",
     "url": "https://happylambhotpot.com/",
-    "visited": 0,
+    "visited": 3,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -668,6 +560,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://www.cambridgedesidhaba.net/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -679,18 +572,8 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://sicarapizza.com/cambridge-central-square-si-cara-food-menu",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
-  },
-  {
-    "title": "Alden & Harlow",
-    "price": 2,
-    "categories": ["American", "Breakfast"],
-    "location": "Cambridge (Harvard Square)",
-    "distance": 41,
-    "transport": "train",
-    "url": "https://www.aldenharlow.com/",
-    "visited": 0,
-    "notes": "Try the focaccia and corn/shishito pancakes"
   },
   {
     "title": "Mr. Bartley's Burger Cottage",
@@ -701,6 +584,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://mrbartley.com/menu/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -712,6 +596,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "http://www.pinocchiospizza.net/menu.html",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -723,6 +608,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://www.hojokoboston.com/menus/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -734,6 +620,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://mortadellahead.com/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
   },
   {
@@ -745,6 +632,7 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://pizza-roma-watertownma.square.site/",
     "visited": 0,
+    "cash_only": 1,
     "notes": ""
   },
   {
@@ -756,7 +644,20 @@ const restaurant_json = [
     "transport": "train",
     "url": "https://www.volopizzeria.com/",
     "visited": 0,
+    "cash_only": 0,
     "notes": ""
+  },
+  {
+    "title": "Deluxe Town Diner",
+    "price": 1,
+    "categories": ["Breakfast"],
+    "location": "Way Out There",
+    "distance": 60,
+    "transport": "train",
+    "url": "http://www.deluxetowndiner.com/menu",
+    "visited": 0,
+    "cash_only": 0,
+    "notes": "Try the blueberry pancakes"
   }
 ];
 
